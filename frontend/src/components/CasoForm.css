@@ -1,0 +1,43 @@
+.caso-form {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.caso-form h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.caso-form label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+.caso-form input,
+.caso-form textarea,
+.caso-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #003366;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.caso-form button {
+  background: #003366;
+  color: #FFD600;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}

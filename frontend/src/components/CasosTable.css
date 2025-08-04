@@ -1,0 +1,93 @@
+.casos-container {
+  background: #f5f5f5;
+  padding: 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.casos-title {
+  color: #fff;
+  background: #003366;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.casos-table {
+  margin-bottom: 2rem;
+}
+
+.casos-table th {
+  background: #003366;
+  color: #FFD600;
+  padding: 0.75rem;
+  border: 1px solid #003366;
+  font-weight: 600;
+}
+
+.casos-table td {
+  padding: 0.75rem;
+  border: 1px solid #003366;
+  color: #003366;
+}
+
+.casos-table tr:nth-child(even) {
+  background: #f0f4fa;
+}
+
+.casos-table tr:nth-child(odd) {
+  background: #fff;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  min-width: 350px;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Paginación */
+.casos-pagination {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.casos-pagination button {
+  background: #003366;
+  color: #FFD600;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.casos-pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.casos-pagination span {
+  font-weight: bold;
+  color: #003366;
+}

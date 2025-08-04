@@ -1,0 +1,43 @@
+<mxGraphModel dx="1434" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="2" value="Usuario (Fiscal)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+      <mxGeometry x="80" y="260" width="30" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="3" value="&lt;b&gt;Frontend&lt;/b&gt;&lt;br&gt;React.js App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="200" y="250" width="120" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="4" value="Entorno Contenerizado (Docker)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" parent="1">
+      <mxGeometry x="400" y="150" width="380" height="360" as="geometry" />
+    </mxCell>
+    <mxCell id="5" value="&lt;b&gt;Backend&lt;/b&gt;&lt;br&gt;Node.js / Express&lt;br&gt;&lt;i&gt;(Servicios RESTful)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="4">
+      <mxGeometry x="40" y="100" width="140" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="6" value="&lt;b&gt;Base de Datos&lt;/b&gt;&lt;br&gt;SQL Server&lt;br&gt;&lt;i&gt;(Procedimientos Almacenados)&lt;/i&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="4">
+      <mxGeometry x="210" y="95" width="140" height="90" as="geometry" />
+    </mxCell>
+    <mxCell id="7" value="Postman / Swagger" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+      <mxGeometry x="490" y="450" width="30" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="8" value="HTTP/S" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="9" value="Llamadas a la API (REST)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3" target="5">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="360" y="290" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="10" value="Conexión de BD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5" target="6">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="580" y="290" as="sourcePoint" />
+        <mxPoint x="650" y="290" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="11" value="Pruebas de API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7" target="5">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="505" y="380" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+  </root>
+</mxGraphModel>

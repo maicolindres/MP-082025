@@ -1,0 +1,41 @@
+<!-- draw.io ERD for MP project -->
+<mxfile host="app.diagrams.net">
+  <diagram name="Entidad-Relación MP" id="MP-ERD">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Casos Table -->
+        <mxCell id="2" value="Casos&#xa;id (PK)&#xa;numero_caso (UNIQUE)&#xa;descripcion&#xa;estado&#xa;fecha_creacion&#xa;id_fiscal_asignado (FK)&#xa;id_fiscalia (FK)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="220" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- Fiscales Table -->
+        <mxCell id="3" value="Fiscales&#xa;id (PK)&#xa;nombre&#xa;id_fiscalia (FK)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="60" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Fiscalias Table -->
+        <mxCell id="4" value="Fiscalias&#xa;id (PK)&#xa;nombre" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#003366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="180" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Relación Casos.id_fiscal_asignado -> Fiscales.id -->
+        <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FFD600;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Relación Casos.id_fiscalia -> Fiscalias.id -->
+        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FFD600;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Relación Fiscales.id_fiscalia -> Fiscalias.id -->
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FFD600;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

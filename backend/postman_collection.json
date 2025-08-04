@@ -1,0 +1,132 @@
+{
+    "info": {
+        "_postman_id": "a1b2c3d4-e5f6-7890-1234-abcdef123456",
+        "name": "Ministerio Publico API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Obtener todos los casos",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/api/casos",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "casos"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Obtener caso por ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/api/casos/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "casos",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Crear nuevo caso",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"numero_caso\": \"CASO-2024-001\",\n    \"descripcion\": \"Descripción del caso de prueba.\",\n    \"estado\": \"pendiente\",\n    \"id_fiscal_asignado\": 1,\n    \"id_fiscalia\": 2\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/api/casos",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "casos"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Actualizar caso por ID",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"numero_caso\": \"CASO-2024-001-UPD\",\n    \"descripcion\": \"Caso actualizado.\",\n    \"estado\": \"en progreso\",\n    \"id_fiscal_asignado\": 2,\n    \"id_fiscalia\": 2\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:3000/api/casos/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "casos",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Eliminar caso por ID",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:3000/api/casos/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000",
+                    "path": [
+                        "api",
+                        "casos",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
